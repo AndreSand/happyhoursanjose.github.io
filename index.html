@@ -9,8 +9,9 @@
             font-family: sans-serif;
             text-align: center;
             padding: 2em;
+            padding-bottom: 80px; /* Add padding for the banner */
         }
-        header, main, footer {
+        header, main {
             max-width: 600px;
             margin: 0 auto;
         }
@@ -28,14 +29,27 @@
         a img {
             margin: 1em;
         }
-        footer {
-            margin-top: 3em;
+        .bottom-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f8f8f8;
+            border-top: 1px solid #e7e7e7;
+            padding: 15px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        .bottom-banner p {
+            margin: 0;
             font-size: 0.9em;
+            color: #333;
         }
     </style>
 </head>
 <body>
     <header>
+        <img src="feature-icon.png" alt="Happy Hours App Icon" style="width: 150px; margin-bottom: 1em;">
         <h1>Happy Hours</h1>
         <p>Discover the best happy hour deals in the world! Find drinks & food specials</p>
     </header>
@@ -46,20 +60,14 @@
             <a href="https://play.google.com/store/apps/details?id=com.happyhoursglobal">
                 <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
             </a>
-            <!-- The original link to the Apple App Store seems to be broken. -->
-            <a href="#">
+            <a href="https://apps.apple.com/us/app/happy-hours-global/id6752629523">
                 <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
             </a>
         </section>
-
-        <section>
-            <h2>Support</h2>
-            <p>If you have any questions or need support, please contact us at <a href="mailto:android.sjsu@gmail.com">android.sjsu@gmail.com</a>.</p>
-        </section>
     </main>
 
-    <footer>
-        <p><a href="happyhourPrivacyPolicy.html">Privacy Policy</a></p>
-    </footer>
+    <div class="bottom-banner">
+        <p>If you have any questions or need support, please contact us at <a href="mailto:android.sjsu@gmail.com">android.sjsu@gmail.com</a>. | <a href="happyhourPrivacyPolicy.html">Privacy Policy</a></p>
+    </div>
 </body>
 </html>

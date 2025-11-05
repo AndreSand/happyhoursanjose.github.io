@@ -7,26 +7,46 @@
     <style>
         body {
             font-family: sans-serif;
-            text-align: center;
             padding: 2em;
             padding-bottom: 80px; /* Add padding for the banner */
         }
-        header, main {
-            max-width: 600px;
+        .container {
+            max-width: 960px;
             margin: 0 auto;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2em;
+        }
+        header img {
+            width: 150px;
+            margin-right: 1em;
         }
         h1 {
             font-size: 2.5em;
-            margin-bottom: 0.5em;
+            margin-bottom: 0.2em;
         }
         p {
             font-size: 1.2em;
             color: #666;
+            margin-top: 0;
         }
         section {
             margin-bottom: 2em;
         }
-        a img {
+        .screenshots {
+            text-align: center;
+        }
+        .screenshots img {
+            width: 200px;
+            margin: 10px;
+            border: 1px solid #ccc;
+        }
+        .downloads {
+            text-align: center;
+        }
+        .downloads a img {
             margin: 1em;
         }
         .bottom-banner {
@@ -48,23 +68,34 @@
     </style>
 </head>
 <body>
-    <header>
-        <img src="feature-icon.png" alt="Happy Hours App Icon" style="width: 150px; margin-bottom: 1em;">
-        <h1>Happy Hours</h1>
-        <p>Discover the best happy hour deals in the world! Find drinks & food specials</p>
-    </header>
+    <div class="container">
+        <header>
+            <img src="feature-icon.png" alt="Happy Hours App Icon">
+            <div>
+                <h1>Happy Hours</h1>
+                <p>Discover the best happy hour deals in the world! Find drinks & food specials</p>
+            </div>
+        </header>
 
-    <main>
-        <section>
-            <h2>Download the App</h2>
-            <a href="https://play.google.com/store/apps/details?id=com.happyhoursglobal">
-                <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
-            </a>
-            <a href="https://apps.apple.com/us/app/happy-hours-global/id6752629523">
-                <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
-            </a>
-        </section>
-    </main>
+        <main>
+            <section class="screenshots">
+                <h2>App Screenshots</h2>
+                <img src="home1.png" alt="Screenshot 1">
+                <img src="home2.png" alt="Screenshot 2">
+                <img src="home3.png" alt="Screenshot 3">
+                <img src="home4.png" alt="Screenshot 4">
+            </section>
+            <section class="downloads">
+                <h2>Download the App</h2>
+                <a href="https://play.google.com/store/apps/details?id=com.happyhoursglobal">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
+                </a>
+                <a href="https://apps.apple.com/us/app/happy-hours-global/id6752629523">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
+                </a>
+            </section>
+        </main>
+    </div>
 
     <div class="bottom-banner">
         <p>If you have any questions or need support, please contact us at <a href="mailto:android.sjsu@gmail.com">android.sjsu@gmail.com</a>. | <a href="happyhourPrivacyPolicy.html">Privacy Policy</a></p>

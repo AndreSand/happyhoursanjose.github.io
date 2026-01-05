@@ -107,7 +107,7 @@ header {
 .hero {
     display: flex;
     flex-direction: column;
-    lg-flex-direction: row;
+
     align-items: center;
     justify-content: space-between;
     padding: 60px 20px;

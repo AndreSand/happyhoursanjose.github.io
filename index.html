@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,47 +9,84 @@
         body {
             font-family: sans-serif;
             padding: 2em;
-            padding-bottom: 80px; /* Add padding for the banner */
+            padding-bottom: 80px;
+            /* Add padding for the banner */
         }
+
         .container {
             max-width: 960px;
             margin: 0 auto;
         }
+
         header {
             display: flex;
             align-items: center;
             margin-bottom: 2em;
         }
+
         header img {
             width: 150px;
             margin-right: 1em;
         }
+
         h1 {
             font-size: 2.5em;
             margin-bottom: 0.2em;
         }
+
         p {
             font-size: 1.2em;
             color: #666;
             margin-top: 0;
         }
+
         section {
             margin-bottom: 2em;
         }
+
         .screenshots {
             text-align: center;
         }
+
         .screenshots img {
             width: 200px;
             margin: 10px;
             border: 1px solid #ccc;
         }
+
         .downloads {
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 2em;
         }
+
+        .downloads h2 {
+            margin: 0;
+            margin-right: 10px;
+            /* Optional: extra spacing between text and first button */
+            font-size: 1.5em;
+            /* Adjust size if needed to match buttons visual weight */
+        }
+
+        .downloads a {
+            display: inline-block;
+            transition: transform 0.2s;
+        }
+
+        .downloads a:hover {
+            transform: scale(1.05);
+        }
+
         .downloads a img {
-            margin: 1em;
+            width: auto;
+            height: 60px;
+            /* Fixed height for consistency */
+            margin: 0;
+            /* Removed margin in favor of gap */
         }
+
         .bottom-banner {
             position: fixed;
             bottom: 0;
@@ -60,6 +98,7 @@
             text-align: center;
             z-index: 1000;
         }
+
         .bottom-banner p {
             margin: 0;
             font-size: 0.9em;
@@ -67,6 +106,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -79,16 +119,18 @@
 
         <main>
             <section class="downloads">
-                <h2>Download the App</h2>
+                <h2>Download</h2>
                 <a href="https://play.google.com/store/apps/details?id=com.happyhoursglobal">
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
+                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                        alt="Get it on Google Play">
                 </a>
                 <a href="https://apps.apple.com/us/app/happy-hours-global/id6752629523">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                        alt="Download on the App Store">
                 </a>
             </section>
             <section class="screenshots">
-                <img src="home5.png" alt="Screenshot 5">
+                <img src="home.png" alt="Screenshot 5">
                 <img src="home1.png" alt="Screenshot 1">
                 <img src="home2.png" alt="Screenshot 2">
                 <img src="home3.png" alt="Screenshot 3">
@@ -98,7 +140,10 @@
     </div>
 
     <div class="bottom-banner">
-        <p>If you have any questions or need support, please contact us at <a href="mailto:android.sjsu@gmail.com">android.sjsu@gmail.com</a>. | <a href="happyhourPrivacyPolicy.html">Privacy Policy</a></p>
+        <p>If you have any questions or need support, please contact us at <a
+                href="mailto:android.sjsu@gmail.com">android.sjsu@gmail.com</a>. | <a
+                href="happyhourPrivacyPolicy.html">Privacy Policy</a></p>
     </div>
 </body>
+
 </html>

@@ -1,104 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Hours</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            padding: 2em;
-            padding-bottom: 80px; /* Add padding for the banner */
-        }
-        .container {
-            max-width: 960px;
-            margin: 0 auto;
-        }
-        header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 2em;
-        }
-        header img {
-            width: 150px;
-            margin-right: 1em;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.2em;
-        }
-        p {
-            font-size: 1.2em;
-            color: #666;
-            margin-top: 0;
-        }
-        section {
-            margin-bottom: 2em;
-        }
-        .screenshots {
-            text-align: center;
-        }
-        .screenshots img {
-            width: 200px;
-            margin: 10px;
-            border: 1px solid #ccc;
-        }
-        .downloads {
-            text-align: center;
-        }
-        .downloads a img {
-            margin: 1em;
-        }
-        .bottom-banner {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background-color: #f8f8f8;
-            border-top: 1px solid #e7e7e7;
-            padding: 15px 0;
-            text-align: center;
-            z-index: 1000;
-        }
-        .bottom-banner p {
-            margin: 0;
-            font-size: 0.9em;
-            color: #333;
-        }
-    </style>
+    <title>Happy Hours - Discover Best Deals</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <img src="feature-icon.png" alt="Happy Hours App Icon">
-            <div>
-                <h1>Happy Hours</h1>
-                <p>Discover the best happy hour deals in the world! Find drinks & food specials</p>
+
+    <header>
+        <div class="container">
+            <div class="logo-container">
+                <img src="feature-icon.png" alt="Happy Hours App Icon">
+                <span class="logo-text">Happy Hours</span>
             </div>
-        </header>
+        </div>
+    </header>
 
-        <main>
-            <section class="downloads">
-                <h2>Download the App</h2>
-                <a href="https://play.google.com/store/apps/details?id=com.happyhoursglobal">
-                    <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" alt="Get it on Google Play" width="200">
-                </a>
-                <a href="https://apps.apple.com/us/app/happy-hours-global/id6752629523">
-                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store" width="200">
-                </a>
-            </section>
-            <section class="screenshots">
-                <img src="home5.png" alt="Screenshot 5">
-                <img src="home1.png" alt="Screenshot 1">
-                <img src="home2.png" alt="Screenshot 2">
-                <img src="home3.png" alt="Screenshot 3">
-                <img src="home4.png" alt="Screenshot 4">
-            </section>
-        </main>
-    </div>
+    <main>
+        <!-- Hero Section -->
+        <section class="container hero">
+            <div class="hero-content">
+                <h1>Unlock the Best<br>Happy Hour Deals</h1>
+                <p>Find exclusive drinks & food specials near you. The ultimate guide to your city's happy hours, right
+                    in
+                    your pocket.</p>
 
-    <div class="bottom-banner">
-        <p>If you have any questions or need support, please contact us at <a href="mailto:android.sjsu@gmail.com">android.sjsu@gmail.com</a>. | <a href="happyhourPrivacyPolicy.html">Privacy Policy</a></p>
-    </div>
+                <div class="store-buttons">
+                    <a href="https://apps.apple.com/us/app/happy-hours-global/id6752629523" class="store-btn">
+                        <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                            alt="Download on the App Store">
+                    </a>
+                    <a href="https://play.google.com/store/apps/details?id=com.happyhoursglobal" class="store-btn">
+                        <img src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+                            alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <!-- Using the video gif as the main visual attractor -->
+                <img src="happyhour-video.gif" alt="Happy Hours App Demo">
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section class="gallery">
+            <div class="container">
+                <h2>App Screenshots</h2>
+                <div class="gallery-grid">
+                    <img src="home.png" alt="Happy Hours Home" class="screenshot">
+                    <img src="home1.png" alt="Map View" class="screenshot">
+                    <img src="home2.png" alt="List View" class="screenshot">
+                    <img src="home3.png" alt="Deal Details" class="screenshot">
+                    <img src="home4.png" alt="Search" class="screenshot">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Happy Hours Global. All rights reserved.</p>
+            <p>Questions? Contact us at <a href="mailto:android.sjsu@gmail.com">android.sjsu@gmail.com</a></p>
+            <p><a href="happyhourPrivacyPolicy.html">Privacy Policy</a></p>
+        </div>
+    </footer>
+
 </body>
+
 </html>
